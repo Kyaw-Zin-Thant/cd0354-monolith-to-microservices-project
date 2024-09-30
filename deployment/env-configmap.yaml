@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+data:
+  POSTGRES_DB: "postgres"
+  AWS_BUCKET: "udacitypj3"
+  AWS_REGION: "us-east-1"
+  AWS_PROFILE: "default"
+  URL: "http://localhost:8080"
