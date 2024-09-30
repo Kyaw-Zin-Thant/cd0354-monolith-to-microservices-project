@@ -27,12 +27,12 @@ jobs:
             docker tag udagram-api-user kzt007/udagram-api-user:v1
             docker tag udagram-api-feed kzt007/udagram-api-feed:v1
             docker tag udagram-frontend kzt007/udagram-frontend:v1
-            docker tag udagram-reverseproxy kzt007/udagram-reverseproxy:v1
+            docker tag udagram-reverse-proxy kzt007/udagram-reverse-proxy:v1
 
             docker push kzt007/udagram-api-user:v1
             docker push kzt007/udagram-api-feed:v1
             docker push kzt007/udagram-frontend:v1
-            docker push kzt007/udagram-reverseproxy:v1
+            docker push kzt007/udagram-reverse-proxy:v1
 workflows:
   build-and-deploy:
     jobs:
