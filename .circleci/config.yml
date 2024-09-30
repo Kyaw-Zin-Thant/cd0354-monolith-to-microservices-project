@@ -24,15 +24,15 @@ jobs:
 
             docker-compose -f docker-compose-build.yaml build --parallel
 
-            docker tag udagram-api-user kzt007/udagram-api-user:v4
-            docker tag udagram-api-feed kzt007/udagram-api-feed:v4
-            docker tag udagram-frontend kzt007/udagram-frontend:v5
-            docker tag reverseproxy kzt007/reverseproxy:v4
+            docker tag udagram-api-user kzt007/udagram-api-user:v1
+            docker tag udagram-api-feed kzt007/udagram-api-feed:v1
+            docker tag udagram-frontend kzt007/udagram-frontend:v1
+            docker tag udagram-reverseproxy kzt007/udagram-reverseproxy:v1
 
-            docker push kzt007/udagram-api-user:v4
-            docker push kzt007/udagram-api-feed:v4
-            docker push kzt007/udagram-frontend:v5
-            docker push kzt007/reverseproxy:v4
+            docker push kzt007/udagram-api-user:v1
+            docker push kzt007/udagram-api-feed:v1
+            docker push kzt007/udagram-frontend:v1
+            docker push kzt007/udagram-reverseproxy:v1
 workflows:
   build-and-deploy:
     jobs:
